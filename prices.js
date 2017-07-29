@@ -24,6 +24,6 @@ switch(process.argv[2].toUpperCase()){
 }
 
 exchange = ["bittrex","poloniex","kraken","okcoin","bitstamp","coinbase"]
-for(i=0;i<exchange.length-1;i++){
+for(i=0;i<exchange.length;i++){
 	ticker(exchange[i],res)
 }
