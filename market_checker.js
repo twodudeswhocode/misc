@@ -23,7 +23,6 @@ request({
 				}
 			}
 		}
-	console.log( exchangesGot )
 	console.log( exchangesPoll )
 	}
 })
