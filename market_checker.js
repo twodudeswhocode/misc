@@ -15,7 +15,7 @@ request({
 }, function (error, response, body) {
 	if (!error && response.statusCode === 200) {
 		for(let i = 0, l = body.Data.Exchanges.length; i < l; i++) {
-			exchangesGot.push( body.Data.Exchanges[i].MARKET )
+			exchangesGot.push( body.Data.Exchanges[i].MARKET.toLowerCase() )
 
 			for (var z = 0; z < exchangesMain.length; z++) {
 				for(var j = 0; j < exchangesGot.length; j++) {
